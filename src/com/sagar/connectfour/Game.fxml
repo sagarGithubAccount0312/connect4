@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sagar.connectfour.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="324.6" minWidth="241.60001525878909" prefWidth="241.60001525878909" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+   <children>
+      <Pane prefHeight="38.0" GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDiskPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Region prefHeight="25.0" prefWidth="240.0" />
+            <TextField fx:id="firstPlayerName" prefHeight="26.0" prefWidth="244.0" promptText="First Player Name" />
+            <Region prefHeight="5.0" prefWidth="240.0" />
+            <TextField fx:id="secondPlayerName" prefHeight="26.0" prefWidth="244.0" promptText="Second Player Name" />
+            <Button fx:id="setButton" alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" prefHeight="26.0" prefWidth="244.0" text="Set" />
+            <Label fx:id="playerName" alignment="CENTER" prefHeight="47.0" prefWidth="314.0" text="Player One" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="329.0" text="Turn" textFill="#f8f7f7">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+         </children></VBox>
+   </children>
+</GridPane>
